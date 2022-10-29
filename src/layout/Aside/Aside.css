@@ -1,0 +1,70 @@
+.aside {
+  background-color: #efefef;
+  width: 270px;
+  height: 100vh;
+  padding: 15px 30px;
+}
+
+.aside-title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 15px;
+  padding-top: 15px;
+}
+
+.aside-name {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  margin: 0 10px;
+}
+
+span {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b8b8b8;
+}
+
+.aside-list {
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+.aside-item {
+  margin: 10px 0;
+}
+
+.aside-link {
+  display: flex;
+  align-items: center;
+  color: #353549;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 25px 30px;
+}
+
+.aside-link > p {
+  margin: 0 20px;
+}
+
+.aside__link-active{
+    background: #6f6af8;
+    border-radius: 5px;
+    padding: 22px 30px;
+    color: #fff;
+}
+
+.aside__link-active svg path {
+    fill: #fff;
+}
