@@ -2,9 +2,7 @@
   width: 100%;
   text-align: start;
   padding: 15px;
-  background: #6F6AF8;
 }
-
 
 .product{
     background-color: #fff;
@@ -13,19 +11,18 @@
     margin: 15px 30px;
 }
 
-thead tr th{
-    color: #fff;
+.product-thead{
+    width: 98%;
+}
+
+.product-name{
+    color:#000;
 }
 
 .product-tr{
     height: 55px;
 }
 
-thead,
-tbody {
-  text-align: center;
-}
-
-thead th {
-  text-align:center;
+.product-names{
+    text-align: start;
 }
