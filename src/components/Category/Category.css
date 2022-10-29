@@ -1,0 +1,28 @@
+.category-table{
+    width: 100%;
+    text-align: start;
+    padding: 15px;
+}
+
+.category{
+    background-color: #fff;
+    padding: 25px;
+    width: 98%;
+    margin: 15px 30px;
+}
+
+.category-thead{
+    width: 98%;
+}
+
+.category-name{
+    color: #6F6AF8;
+    font-size: 18px;
+}
+
+.category-names{
+    text-align: start;
+    color: #000;
+    font-size: 16px;
+    line-height: 22px;
+}
