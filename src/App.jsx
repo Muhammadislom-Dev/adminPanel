@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Category from "./components/Category/Category";
 import Product from "./components/Product/Product";
 import UserTable from "./components/UserTable/UserTable";
 import Wrapper from "./components/Wrapper/Wrapper";
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<UserTable />} />
             <Route path="/analitica" element={<Analitica />} />
             <Route path="/product" element={<Product />} />
+            <Route path="/category" element={<Category />} />
           </Routes>
         </div>
       </div>

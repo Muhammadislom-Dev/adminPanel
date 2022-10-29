@@ -7,7 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   list-style: none;
   text-decoration: none;
-  overflow-y:hidden;
 }
 
 code {
@@ -23,3 +22,21 @@ code {
   list-style: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:  #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6f6af8;
+}
