@@ -1,6 +1,7 @@
 .App-page{
     display: flex;
     width: 100%;
+    overflow: auto;
 }
 
 .App-box{
