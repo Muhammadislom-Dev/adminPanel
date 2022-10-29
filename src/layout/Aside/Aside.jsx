@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Exam } from "../../SVG/Exam";
 import { Order } from "../../SVG/Order";
 import { New } from "../../SVG/New";
+import Analitika from "../../SVG/Analitika";
 
 const Aside = () => {
 
@@ -34,13 +35,18 @@ const Aside = () => {
             </Link>
           </li>
           <li className="aside-item">
-            <Link onClick={handleAddClass} to="/" className="aside-link">
+            <Link onClick={handleAddClass} to="/product" className="aside-link">
               <Exam /> <p>Topshiriqlar</p>
             </Link>
           </li>
           <li className="aside-item">
             <Link onClick={handleAddClass} to="/" className="aside-link">
               <Order /> <p>Buyurtma</p>
+            </Link>
+          </li>
+          <li className="aside-item">
+            <Link onClick={handleAddClass} to="/analitica" className="aside-link">
+              <Analitika /> <p>Analitika</p>
             </Link>
           </li>
           <li className="aside-item">
