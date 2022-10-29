@@ -1,0 +1,31 @@
+.product-table{
+  width: 100%;
+  text-align: start;
+  padding: 15px;
+  background: #6F6AF8;
+}
+
+
+.product{
+    background-color: #fff;
+    padding: 25px;
+    width: 98%;
+    margin: 15px 30px;
+}
+
+thead tr th{
+    color: #fff;
+}
+
+.product-tr{
+    height: 55px;
+}
+
+thead,
+tbody {
+  text-align: center;
+}
+
+thead th {
+  text-align:center;
+}
