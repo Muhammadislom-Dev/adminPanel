@@ -1,0 +1,50 @@
+.navbar{
+    padding: 12px 30px;
+    background-color: #fff;
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-item{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.navbar-title{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-img{
+    margin: 0 5px;
+}
+
+.navbar-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight:bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #6F6AF8;
+}
+
+.navbar-subname{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #BCBCBC;
+}
