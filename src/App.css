@@ -7,5 +7,6 @@
 .App-box{
     width: 100%;
     background-color: #efefef;
-    padding: 25px;
+    padding:25px 0px;
+    padding-right: 25px;
 }
