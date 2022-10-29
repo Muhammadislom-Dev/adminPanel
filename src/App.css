@@ -1,0 +1,10 @@
+.App-page{
+    display: flex;
+    width: 100%;
+}
+
+.App-box{
+    width: 100%;
+    background-color: #efefef;
+    padding: 25px;
+}
