@@ -2,9 +2,11 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Avatar from "../../assets/img/avatar.png";
 import menu from "../../assets/img/menu.png";
-import './UserTable.css'
-import file from '../../assets/img/file.png'
-import credit from '../../assets/img/creditcard.png'
+import "./UserTable.css";
+import file from "../../assets/img/file.png";
+import credit from "../../assets/img/creditcard.png";
+import top from "../../assets/img/top.png";
+import tolov from "../../assets/img/banknote.png";
 
 function UserTable() {
   const [users, setUsers] = useState([]);
@@ -18,19 +20,44 @@ function UserTable() {
   return (
     <div className="user">
       <div className="container">
+        <div className="user-title">
+          <label htmlFor="" className="user-label">
+            <img src={file} alt="" className="user-logo" />
+            <input type="text" placeholder="Izlash" className="user-input" />
+          </label>
+          <div className="user-titles">
+            <button className="user-button">
+              <img src={credit} alt="" className="user-image" /> Buyurtma berish
+            </button>
+            <button className="user-buttons">
+              <img src={tolov} alt="" className="user-image" /> To'lov
+            </button>
+            <button className="user-btn">
+              <img src={top} alt="" className="user-image" /> Yangi Topshiriq
+            </button>
+          </div>
+        </div>
         <ul className="user-list">
-            <li className="user-item">
-                <a href="#" className="user-link">All</a>
-            </li>
-            <li className="user-item">
-                <a href="#" className="user-link">Not seen</a>
-            </li>
-            <li className="user-item">
-                <a href="#" className="user-link">Saved</a>
-            </li>
-            <li className="user-item">
-                <a href="#" className="user-link">Blocked</a>
-            </li>
+          <li className="user-item">
+            <a href="#" className="user-link">
+              All
+            </a>
+          </li>
+          <li className="user-item">
+            <a href="#" className="user-link">
+              Not seen
+            </a>
+          </li>
+          <li className="user-item">
+            <a href="#" className="user-link">
+              Saved
+            </a>
+          </li>
+          <li className="user-item">
+            <a href="#" className="user-link">
+              Blocked
+            </a>
+          </li>
         </ul>
         <table className="user-table">
           <thead>
@@ -75,7 +102,7 @@ function UserTable() {
               ))}
             </tbody>
           )}
-        </table>        
+        </table>
       </div>
     </div>
   );
