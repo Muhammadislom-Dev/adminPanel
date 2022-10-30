@@ -1,7 +1,6 @@
 .aside {
   background-color: #efefef;
   width: 240px;
-  height: 100vh;
   padding: 15px 10px;
   border-right: 1px solid #000000;
 }
@@ -51,7 +50,6 @@ span {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  /* line-height: 21px; */
   text-decoration: none;
   padding: 20px 25px;
 }
