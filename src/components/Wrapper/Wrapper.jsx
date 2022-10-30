@@ -14,7 +14,7 @@ function Wrapper() {
 
   return (
     <div className="wrapper">
-      <div className="user-title">
+      {/* <div className="user-title">
         <label htmlFor="" className="user-label">
           <img src={file} alt="" className="user-logo" />
           <input type="text" placeholder="Izlash" className="user-input" />
@@ -30,7 +30,7 @@ function Wrapper() {
             <img src={top} alt="" className="user-image" /> Yangi Topshiriq
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
