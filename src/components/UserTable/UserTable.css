@@ -90,3 +90,97 @@ thead th {
   padding: 0 15px;
 }
 
+
+
+.user-button {
+  background: #6f6af8;
+  border-radius: 5px;
+  width: 180px;
+  height: 45px;
+  border: 2px solid #6f6af8;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.user-image {
+  margin: 0 5px;
+}
+
+.user-titles {
+  display: flex;
+  align-items: center;
+}
+
+.user-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.user-label {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #EFEFEF;
+  padding: 5px 16px;
+}
+
+.user-input {
+  width: 240px;
+  border: none;
+  outline: none;
+  padding: 8px 11px;
+  background-color: transparent;
+}
+
+.user-buttons {
+  background: #3fc033;
+  border-radius: 5px;
+  width: 114px;
+  height: 45px;
+  border: 2px solid #3fc033;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.user-btn {
+  background: #EFEFEF;
+  border-radius: 5px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6C6C6C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.wrapper{
+    margin-left: 30px;
+}
