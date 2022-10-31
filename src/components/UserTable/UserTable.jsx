@@ -1,21 +1,66 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import Avatar from "../../assets/img/avatar.png";
-import menu from "../../assets/img/menu.png";
 import "./UserTable.css";
 import file from "../../assets/img/file.png";
 import credit from "../../assets/img/creditcard.png";
 import top from "../../assets/img/top.png";
 import tolov from "../../assets/img/banknote.png";
+import Table from "./Table";
+import Modal from 'react-modal';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Modal1 from '@mui/material/Modal';
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 500,
+  height: 130,
+  bgcolor: 'background.paper',
+  border: '2px solid #6f6af8',
+  boxShadow: 24,
+  borderRadius:"8px",
+  p: 4,
+};
+
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '86%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    height: '100%',
+    width:"30%",
+    transform: 'translate(-50%, -50%)',
+  },
+};
 
 function UserTable() {
-  const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((res) => res.json())
-      .then((data) => setUsers(data));
-  }, []);
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+
+  //Delete modal function
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <div className="user">
@@ -26,14 +71,14 @@ function UserTable() {
             <input type="text" placeholder="Izlash" className="user-input" />
           </label>
           <div className="user-titles">
-            <button className="user-button">
-              <img src={credit} alt="" className="user-image" /> Buyurtma berish
+            <button onClick={openModal} className="user-button">
+              <img src={credit} alt="" className="user-image" /> Qo'shish
             </button>
-            <button className="user-buttons">
-              <img src={tolov} alt="" className="user-image" /> To'lov
+            <button onClick={openModal} className="user-buttons">
+              <img src={tolov} alt="" className="user-image" /> Tahrirlash
             </button>
-            <button className="user-btn">
-              <img src={top} alt="" className="user-image" /> Yangi Topshiriq
+            <button onClick={handleOpen} className="user-btn">
+              <img src={top} alt="" className="user-image" /> O'chirish
             </button>
           </div>
         </div>
@@ -59,51 +104,48 @@ function UserTable() {
             </a>
           </li>
         </ul>
-        <table className="user-table">
-          <thead>
-            <tr>
-              <th scope="col">
-                <input type="checkbox" />
-              </th>
-              <th>Name and ID</th>
-              <th>Email</th>
-              <th>Gender</th>
-              <th>Country</th>
-              <th>Activity (day)</th>
-              <th></th>
-            </tr>
-          </thead>
-          {users.length > 0 && (
-            <tbody>
-              {users.map((user, i) => (
-                <tr className="tbody-tr" key={i}>
-                  <th className="tbody-checkbox">
-                    <input type="checkbox" />
-                  </th>
-                  <td>
-                    <span className="users-span">
-                      <img src={Avatar} alt="" className="users-avatar" />
-                      <span>
-                        <p>{user.name} </p>
-                        <p>ID {user.id * 25060}</p>
-                      </span>
-                    </span>
-                  </td>
-                  <td>{user.email}</td>
-                  <td>Man</td>
-                  <td>{user.address.city}</td>
-                  <td>{user.id * 10} min</td>
-                  <td>
-                    <button className="menu-btn">
-                      <img src={menu} alt="" />
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          )}
-        </table>
+        <Table />
       </div>
+
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <button className="user-close" onClick={closeModal}>&times;</button>
+        <form action="" className="user-form">
+          <label htmlFor="" className="user-labels">
+             Last Name  <input type="text" required placeholder="Last Name" className="user-inputs" />
+          </label>
+          <label htmlFor="" className="user-labels">
+             First Name  <input type="text" required placeholder="First Name" className="user-inputs" />
+          </label>
+          <label htmlFor="" className="user-labels">
+             Email  <input type="email" required placeholder="Email" className="user-inputs" />
+          </label>
+          <label htmlFor="" className="user-labels">
+             Phone  <input type="number" required placeholder="Phone Number" className="user-inputs" />
+          </label>
+          <div className="user-bottom">
+            <button type="submit" className="user-submit">Create</button>
+          </div>
+        </form>
+      </Modal>
+
+      <Modal1
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              Siz shu user haqidagi ma'lumotlarni o'chirmoqchimisiz?
+          </Typography>
+        </Box>
+      </Modal1>
     </div>
   );
 }
