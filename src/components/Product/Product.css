@@ -26,3 +26,7 @@
 .product-names{
     text-align: start;
 }
+
+ textarea {
+    height: 60px;
+}
