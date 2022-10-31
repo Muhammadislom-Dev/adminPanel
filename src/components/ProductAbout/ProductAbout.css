@@ -1,0 +1,14 @@
+.product-about{
+    background-color: #fff;
+    padding: 25px;
+    width: 98%;
+    margin: 15px 30px;
+}
+
+.product-about-name{
+    color:#6f6af8;
+    font-size: 30px;
+    line-height: 35px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
