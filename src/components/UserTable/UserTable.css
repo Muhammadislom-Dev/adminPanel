@@ -95,7 +95,7 @@ thead th {
 .user-button {
   background: #6f6af8;
   border-radius: 5px;
-  width: 180px;
+  width: 160px;
   height: 45px;
   border: 2px solid #6f6af8;
   font-family: "SF Pro Display";
@@ -146,7 +146,7 @@ thead th {
 .user-buttons {
   background: #3fc033;
   border-radius: 5px;
-  width: 114px;
+  width: 140px;
   height: 45px;
   border: 2px solid #3fc033;
   font-family: "SF Pro Display";
@@ -174,7 +174,7 @@ thead th {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  width: 160px;
   height: 45px;
   border: none;
   cursor: pointer;
@@ -183,4 +183,64 @@ thead th {
 
 .wrapper{
     margin-left: 30px;
+}
+
+.user-close{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 40px;
+  color: red;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.user-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user-labels{
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  color: #6f6af8;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.user-inputs{
+  border: 1px solid #6f6af8;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 5px 0;
+  outline: none;
+  resize: none;
+}
+
+.user-inputs::placeholder{
+  font-size: 14px;
+  color: #6f6af8;
+}
+
+.user-submit{
+  border: 2px solid #6f6af8;
+  background-color: #6f6af8;
+  color: #fff;
+  width: 180px;
+  height: 45px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.user-bottom{
+  display: flex;
+  justify-content: end;
 }
