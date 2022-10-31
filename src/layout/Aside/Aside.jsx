@@ -36,7 +36,7 @@ const Aside = () => {
           </li>
           <li className="aside-item">
             <Link onClick={handleAddClass} to="/product" className="aside-link">
-              <Exam /> <p>Topshiriqlar</p>
+              <Exam /> <p>Productlar</p>
             </Link>
           </li>
           <li className="aside-item">
@@ -51,11 +51,11 @@ const Aside = () => {
           </li>
           <li className="aside-item">
             <Link onClick={handleAddClass} to="/category" className="aside-link">
-              <New /> <p>Yangiliklar</p>
+              <New /> <p>Category</p>
             </Link>
           </li>
           <li className="aside-item">
-            <Link onClick={handleAddClass} to="/category" className="aside-link">
+            <Link onClick={handleAddClass} to="/product-about" className="aside-link">
               <New /> <p>Products</p>
             </Link>
           </li>
